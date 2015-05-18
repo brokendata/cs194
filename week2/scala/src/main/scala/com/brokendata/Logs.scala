@@ -43,6 +43,16 @@ object Functions{
 }
 
 object Tree{
+  import Data._
+
   sealed trait MessageTree[+A]
-  
+  case object Leaf extends MessageTree[Nothing]
+  case class Node[+A](l: MessageTree[A], v: LMessage, r: MessageTree[A]) extends MessageTree[A]
+
+  def insert(lm: LogMessage, mt: MessageTree[LogMessage]): MessageTree[LogMessage] =  (lm,mt) match {
+    case (Unknown(_), mt) => mt
+    case (lm: LMessage, Leaf) => Node(Leaf, lm, Leaf)
+    case (lm: LMessage, Node(lt, tlm: LMessage, rt)) => if (lm.timestamp >= tlm.timestamp) Node(lt, tlm, insert(lm, rt))
+    else Node(insert(lm, rt), tlm, rt)
+  }
 }
