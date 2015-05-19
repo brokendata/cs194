@@ -35,9 +35,9 @@ object Functions{
     source.getLines.toStream
   }
 
-  def testParse(fname: String,numLines: Int)(f: String => LogMessage) =
+  def testParse(fname: String,numLines: Int)(parser: String => LogMessage) =
     readFile(fname).map{lines =>
-      lines.map(f).take(numLines)
+      lines.map(parser).take(numLines).toList
     }.unsafePerformIO
 
 }
@@ -51,8 +51,23 @@ object Tree{
 
   def insert(lm: LogMessage, mt: MessageTree[LogMessage]): MessageTree[LogMessage] =  (lm,mt) match {
     case (Unknown(_), mt) => mt
-    case (lm: LMessage, Leaf) => Node(Leaf, lm, Leaf)
-    case (lm: LMessage, Node(lt, tlm: LMessage, rt)) => if (lm.timestamp >= tlm.timestamp) Node(lt, tlm, insert(lm, rt))
-    else Node(insert(lm, rt), tlm, rt)
+    case (lm: LMessage ,Leaf) => Node(Leaf, lm, Leaf)
+    case (lm: LMessage, Node(left,current:LMessage,right)) if lm.timestamp < current.timestamp => Node(insert(lm,left),current,right)
+    case (lm: LMessage, Node(left,current:LMessage,right)) if lm.timestamp >= current.timestamp => Node(left,current,insert(lm,right))
   }
+
+  def build(llm: List[LogMessage]):MessageTree[LogMessage]  = llm match {
+    case Nil => Leaf
+    case x :: xs => insert(x,build(xs))
+  }
+
+  def inOrder(mt: MessageTree[LogMessage]): List[LogMessage] = mt match {
+    case Leaf => Nil
+    case Node(l, v, r) => inOrder(l) ++ List(v) ++ inOrder(r)
+  }
+
+  val whatWentWrong = build _ andThen inOrder _ andThen {(_: List[LogMessage]).collect{
+    case l @ LMessage(Error(v),t,m) if v > 50 => l
+  }}
+
 }
