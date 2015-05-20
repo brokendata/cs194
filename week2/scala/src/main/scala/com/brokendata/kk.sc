@@ -29,7 +29,7 @@ val whatWentWrong = build _ andThen inOrder _ andThen {(_: List[LogMessage]).col
 
 
 
-val g = x(llist)
+val g
 
 llist.collect{
   case l @ LMessage(Error(v),t,m) if v > 50 => l

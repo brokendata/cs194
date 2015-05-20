@@ -40,10 +40,18 @@ object Functions{
       lines.map(parser).take(numLines).toList
     }.unsafePerformIO
 
+  def parser(fname: String)(parser: String => LogMessage) =
+    readFile(fname).map{lines =>
+      lines.map(parser).toList
+    }.unsafePerformIO
+
+  val defualtParser = parser(_:String)(parseMessage _ )
+
 }
 
 object Tree{
   import Data._
+  import Functions._
 
   sealed trait MessageTree[+A]
   case object Leaf extends MessageTree[Nothing]
@@ -66,8 +74,10 @@ object Tree{
     case Node(l, v, r) => inOrder(l) ++ List(v) ++ inOrder(r)
   }
 
-  val whatWentWrong = build _ andThen inOrder _ andThen {(_: List[LogMessage]).collect{
-    case l @ LMessage(Error(v),t,m) if v > 50 => l
-  }}
+  def severityFilter(severityLevel: Int)(llm:List[LogMessage]) = llm.collect{
+    case l @ LMessage(Error(v),t,m) if v > severityLevel => l
+  }
+
+  def whatWentWrong(fname: String) = fname |> defualtParser |> build |> inOrder |> severityFilter(50)
 
 }
