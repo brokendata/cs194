@@ -69,6 +69,12 @@ object Tree{
     case x :: xs => insert(x,build(xs))
   }
 
+  def buildViaFold(llm: List[LogMessage]): MessageTree[LogMessage] =
+  // The scala compiler is confusing at times, in this case it needed a type hit on the return type
+  // so Leaf needed to be explicitly typed as a MessageTree[LogMessage]
+  // ¯\_(ツ)_/¯
+    llm.foldRight(Leaf:MessageTree[LogMessage])((a,z) => insert(a,z))
+
   def inOrder(mt: MessageTree[LogMessage]): List[LogMessage] = mt match {
     case Leaf => Nil
     case Node(l, v, r) => inOrder(l) ++ List(v) ++ inOrder(r)
