@@ -1,0 +1,472 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"my",
+				"myReverse"
+			],
+			[
+				"myLast",
+				"myLastBut"
+			],
+			[
+				"la",
+				"lastdigit"
+			],
+			[
+				"t",
+				"test"
+			],
+			[
+				"im",
+				"import"
+			],
+			[
+				"st",
+				"style_dict"
+			],
+			[
+				"max",
+				"max_workers	param"
+			],
+			[
+				"T",
+				"ThreadPoolExecutor	class"
+			],
+			[
+				"df",
+				"DataFrame	class"
+			],
+			[
+				"projected_om",
+				"projected_om_to_ucid"
+			],
+			[
+				"visid_",
+				"visid_high"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Haskell/Haskell.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"haskell",
+				"SublimeHaskell: Clear imports"
+			],
+			[
+				"build",
+				"SublimeHaskell: Build"
+			],
+			[
+				"run",
+				"SublimeHaskell: Run"
+			],
+			[
+				"hask",
+				"SublimeHaskell: Build"
+			],
+			[
+				"has",
+				"SublimeHaskell: Insert type"
+			],
+			[
+				"repl",
+				"SublimeHaskell Repl: Load"
+			],
+			[
+				"sublimeh",
+				"SublimeHaskell: Show type"
+			],
+			[
+				"haskel",
+				"SublimeHaskell: Run"
+			],
+			[
+				"h",
+				"SublimeHaskell: Check"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"package remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instak",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				":e - Revert"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remote ",
+				"Package Control: Remove Repository"
+			],
+			[
+				"i",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/style_web_metrics_with_rec.hql",
+		"/C/Users/nmrw48/Desktop/Vince vs ATM",
+		"/C/Users/nmrw48/Desktop/lisa_kazor_meeting.txt",
+		"/C/cygwin64/home/nmrw48/repos/md/md_process_par.py",
+		"/C/Users/nmrw48/Desktop/webmetrics.txt",
+		"/C/cygwin64/home/nmrw48/gits/hask/test/src/a.hs",
+		"/C/Users/nmrw48/Desktop/nmo_sta_vendor.sas",
+		"/C/Users/nmrw48/Desktop/om_sta_vendor.sas",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/style_web_metrics_rec_source.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/.gitignore",
+		"/C/cygwin64/home/nmrw48/gits/hask/test/src/t.hs",
+		"/C/cygwin64/home/nmrw48/gits/hask/test/src/test.hs",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/User/SublimeHaskell.sublime-settings",
+		"/C/cygwin64/home/nmrw48/gits/hask/test/t.hs",
+		"/C/cygwin64/home/nmrw48/gits/hask/test/Setup.hs",
+		"/C/cygwin64/home/nmrw48/gits/hask/test/test.cabal",
+		"/C/cygwin64/home/nmrw48/gits/hask/Assign.hs",
+		"/C/cygwin64/home/nmrw48/gits/unicorn/.gitignore",
+		"/C/cygwin64/home/nmrw48/gits/cs194/week2/scala/build.sbt",
+		"/C/cygwin64/home/nmrw48/gits/hask/t.hs",
+		"/C/cygwin64/home/nmrw48/gits/hask/h.hs",
+		"/C/cygwin64/home/nmrw48/gits/hask/r.hs",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/create_mdsku.hql",
+		"/C/cygwin64/home/nmrw48/gits/unicorn/build.sbt",
+		"/C/cygwin64/home/nmrw48/gits/cats/build.sbt",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/create_mdsku_file.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/create_store_recs.hql",
+		"/C/Users/nmrw48/AppData/Local/Temp/Temp1_quickcheck.zip/quickcheck/src/main/scala/quickcheck/QuickCheck.scala",
+		"/C/cygwin64/home/nmrw48/repos/experimental/sparkTemplate/.gitignore",
+		"/C/cygwin64/home/nmrw48/gits/reactive/week1/notes/.gitignore",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/rectest2.hql",
+		"/C/Users/nmrw48/Desktop/kickoff/Omni_views.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/style_web_metrics_with_recs.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/style_web_metrics.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/sku_link_query.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/hive/style_web_metics_rec_source.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/style_web_metrics.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/style_web_metrics2.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/testing.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/testing",
+		"/C/cygwin64/home/nmrw48/test.py",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/AutoPEP8/AutoPep8 (Windows).sublime-settings",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/User/AutoPep8.sublime-settings",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/sell_through.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/generate_test_data.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/cmos_multichannel_rollup.hql",
+		"/C/cygwin64/home/nmrw48/repos/md/md_process.py",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/cygwin64/home/nmrw48/repos/md/test.py",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/cygwin64/home/nmrw48/repos/python/excel_documents.py",
+		"/C/cygwin64/home/nmrw48/repos/md/create_table_all_styles_window.hql",
+		"/C/Users/nmrw48/Desktop/kickoff/test.py",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/pig/code/decile.pig",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/eve.hql",
+		"/C/Users/nmrw48/Desktop/cmos_rollup_new.hql",
+		"/C/Users/nmrw48/Documents/t.py",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/inventory_metrics_alt.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/inventory_metrics.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/eve2.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/views.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/parse_product_list.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/orders.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/queries/classify_ecid_source.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/ddl/create_product_views_v.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/ddl/create_ucid_omni_metrics.hql",
+		"/C/cygwin64/home/nmrw48/repos/hadoop-common/hive/ddl/ucid_omni_metrics.hql",
+		"/C/cygwin64/home/nmrw48/.ssh/config",
+		"/C/cygwin64/home/nmrw48/SCALA/simpleTest/this.py",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Blackboard.tmTheme",
+		"/C/cygwin64/home/nmrw48/.bashrc",
+		"/C/Users/nmrw48/.sbt/0.13/plugins/build.sbt",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Python/Completion Rules.tmPreferences",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/Pylinter/Pylinter.sublime-settings",
+		"/C/cygwin64/home/nmrw48/a.txt",
+		"/C/cygwin64/home/nmrw48/myfolder/b",
+		"/C/cygwin64/home/nmrw48/that",
+		"/C/cygwin64/home/nmrw48/this",
+		"/C/Users/nmrw48/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nmo_cat",
+			"area",
+			"trade",
+			"sta",
+			" ",
+			"double",
+			" 0",
+			" 1",
+			"\\$\\{hiveconf:end_date\\}",
+			"\\$\\{Hiveconf:start_date\\}",
+			"brand",
+			"main",
+			"ncols",
+			"process_sheet",
+			"file_name",
+			"\\\\$",
+			"$",
+			"\\s",
+			"\\n",
+			"\\s",
+			"om_end_date",
+			"om_begin_date",
+			"om_",
+			"om_start",
+			"complete",
+			"dot"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"DOUBLE",
+			" 0.0",
+			" 1.0",
+			"1.0",
+			"2015-03-30",
+			"2015-02-01",
+			"web_metrics",
+			"dollars",
+			"\\s\\n ",
+			"  ",
+			" \\s",
+			" \\n",
+			" ",
+			"",
+			"end_date",
+			"start_date"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 286.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.haskell_error_checker":
+	{
+		"height": 100.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 327.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

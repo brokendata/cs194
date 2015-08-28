@@ -1,0 +1,1 @@
+doubl d = d * d 
