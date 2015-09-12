@@ -84,3 +84,8 @@ parseIntInt = (\x y -> [x,y]) <$> posInt <*> parseSpaceInt
 
 -- alternative 3 arg function
 parseIntInt2 = (\x _ z -> [x,z]) <$> posInt <*> parseSpace <*> posInt
+
+instance Alternative Parser where
+    empty = Parser $ (\_ -> Nothing)
+    (<|>) pa pb = Parser $ \s ->
+        runParser pa s <|> runParser pb s
